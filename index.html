@@ -3,11 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <title>Riot.js Sample</title>
+  <link rel="stylesheet" href="assets/css/sanitize.css">
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <style>
+    .wrapper {
+      margin: 0 auto;
+      padding: 30px 0;
+      width: 980px;
+    }
+    @media (max-width: 980px) {
+      .wrapper {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-  <app-nav></app-nav>
-  <app-list></app-list>
-  <app-sidebar></app-sidebar>
+  <div class="wrapper">
+    <app-nav></app-nav>
+    <app-list></app-list>
+    <app-sidebar></app-sidebar>
+  </div>
   <script src="assets/js/main.bundle.js"></script>
 </body>
 </html>
