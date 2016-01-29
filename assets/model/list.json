@@ -4,25 +4,37 @@
       "id": 0,
       "thumb": "https://pixabay.com/static/uploads/photo/2014/05/02/23/46/new-york-city-336475_960_720.jpg",
       "tags": "タグ",
-      "title": "タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル",
+      "title": "タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル0",
       "description": "テキストテキストテキストテキストテキストテキストテキストテキストテキスト",
-      "layout": 0
+      "link": "/category/apple",
+      "is_visible": true,
+      "layout": 0,
+      "cat_id": 0,
+      "bldg_id": 3
     },
     {
       "id": 1,
       "thumb": "https://pixabay.com/static/uploads/photo/2014/05/02/23/46/new-york-city-336475_960_720.jpg",
       "tags": "タグ",
-      "title": "タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル",
+      "title": "タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル1",
       "description": "テキストテキストテキストテキストテキストテキストテキストテキストテキスト",
-      "layout": 0
+      "link": "./detail.html",
+      "is_visible": true,
+      "layout": 0,
+      "cat_id": 1,
+      "bldg_id": 3
     },
     {
       "id": 2,
       "thumb": "https://pixabay.com/static/uploads/photo/2014/05/02/23/46/new-york-city-336475_960_720.jpg",
       "tags": "タグ",
-      "title": "タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル",
+      "title": "タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル2",
       "description": "テキストテキストテキストテキストテキストテキストテキストテキストテキスト",
-      "layout": 0
+      "link": "./detail.html",
+      "is_visible": true,
+      "layout": 0,
+      "cat_id": 2,
+      "bldg_id": 4
     },
     {
       "id": 3,
@@ -30,7 +42,10 @@
       "tags": "タグ",
       "title": "タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル",
       "description": "テキストテキストテキストテキストテキストテキストテキストテキストテキスト",
-      "layout": 0
+      "link": "./detail.html",
+      "is_visible": true,
+      "layout": 0,
+      "cat_id": 3
     },
     {
       "id": 4,
@@ -38,7 +53,10 @@
       "tags": "タグ",
       "title": "タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル",
       "description": "テキストテキストテキストテキストテキストテキストテキストテキストテキスト",
-      "layout": 0
+      "link": "./detail.html",
+      "is_visible": true,
+      "layout": 0,
+      "cat_id": 4
     },
     {
       "id": 5,
@@ -46,7 +64,10 @@
       "tags": "タグ",
       "title": "タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル",
       "description": "テキストテキストテキストテキストテキストテキストテキストテキストテキスト",
-      "layout": 0
+      "link": "./detail.html",
+      "is_visible": true,
+      "layout": 0,
+      "cat_id": 5
     },
     {
       "id": 6,
@@ -54,7 +75,10 @@
       "tags": "タグ",
       "title": "タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル",
       "description": "テキストテキストテキストテキストテキストテキストテキストテキストテキスト",
-      "layout": 0
+      "link": "./detail.html",
+      "is_visible": true,
+      "layout": 0,
+      "cat_id": 6
     },
     {
       "id": 7,
@@ -62,7 +86,10 @@
       "tags": "タグ",
       "title": "タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル",
       "description": "テキストテキストテキストテキストテキストテキストテキストテキストテキスト",
-      "layout": 0
+      "link": "./detail.html",
+      "is_visible": true,
+      "layout": 0,
+      "cat_id": 7
     },
     {
       "id": 8,
@@ -70,7 +97,10 @@
       "tags": "タグ",
       "title": "タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル",
       "description": "テキストテキストテキストテキストテキストテキストテキストテキストテキスト",
-      "layout": 0
+      "link": "./detail.html",
+      "is_visible": true,
+      "layout": 0,
+      "cat_id": 8
     },
     {
       "id": 9,
@@ -78,7 +108,10 @@
       "tags": "タグ",
       "title": "タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル",
       "description": "テキストテキストテキストテキストテキストテキストテキストテキストテキスト",
-      "layout": 0
+      "link": "./detail.html",
+      "is_visible": true,
+      "layout": 0,
+      "cat_id": 9
     },
     {
       "id": 10,
@@ -86,7 +119,10 @@
       "tags": "タグ",
       "title": "タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル",
       "description": "テキストテキストテキストテキストテキストテキストテキストテキストテキスト",
-      "layout": 0
+      "link": "./detail.html",
+      "is_visible": true,
+      "layout": 0,
+      "cat_id": 10
     }
   ]
 }

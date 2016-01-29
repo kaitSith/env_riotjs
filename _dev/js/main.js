@@ -2,8 +2,10 @@ var riot = require('riot');
 
 require('./tags/app-nav.tag');
 require('./tags/app-list.tag');
+require('./tags/app-detail.tag');
 require('./tags/app-sidebar.tag');
 
-riot.mount('app-nav', {dataRequest: $.get('/assets/api/category.json')});
-riot.mount('app-list', {dataRequest: $.get('/assets/api/list.json')});
-riot.mount('app-sidebar');
+var list = riot.mount('app-list', {dataRequest: $.get('/assets/model/list.json')});
+var nav = riot.mount('app-nav', {dataRequest: $.get('/assets/model/category.json'), selector: list[0]});
+var detail = riot.mount('app-detail', {dataRequest: $.get('/assets/model/list.json')});
+var sidebar = riot.mount('app-sidebar');

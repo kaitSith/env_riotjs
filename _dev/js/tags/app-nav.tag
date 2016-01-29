@@ -1,6 +1,8 @@
 <app-nav>
   <ul class="clearfix">
-    <li each={cat} class="cat-{type}" data-cat="{id}" onclick="{getCat}">{name}</li>
+    <virtual each={cat in cats}>
+      <li class={is_current: cat.is_current} data-cat={cat.id} onclick={getCat}>{cat.name}</li>
+    </virtual>
   </ul>
 
   <style scoped>
@@ -29,22 +31,33 @@
       cursor: pointer;
       float: left;
     }
-    .cat-0{
+    .is_current{
       background: #e4682b;
       color: #fff;
     }
   </style>
 
-  <script>
-    var self = this;
-    this.cat = [];
-    opts.dataRequest.done(function(data){
-      self.cat = data.results;
-      self.update(this.cat);
-    });
+  var controller = require('../controller/common.js');
 
-    getCat(e){
-      console.log('click!');
+  // 初期設定
+  var self = this;
+  controller.getList(self, opts, 'cats');
+  console.log(controller.init());
+
+  getCat(e){
+    // カレント状態をオフ
+    for(num in this.cats){
+      this.cats[num].is_current = null;
     }
-  </script>
+
+    // 選択要素をカレント状態に
+    var current = e.item.cat;
+    this.cats[this.cats.indexOf(current)].is_current = 'on';
+
+    // Controllerのリスト表示実行
+    controller.getCatList(opts.selector, 'lists', this.cats[this.cats.indexOf(current)].id);
+
+    // 更新
+    this.update();
+  }
 </app-nav>
