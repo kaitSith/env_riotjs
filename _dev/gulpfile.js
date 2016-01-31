@@ -16,6 +16,16 @@ gulp.task('reload', ()=>{
   browserSync.reload();
 })
 
+gulp.task('riot', ()=>{
+  return browserify({
+    debug: true,
+    entries: ['js/script']
+  }).transform([riotify])
+    .bundle()
+    .pipe(source('script.bundle.js'))
+    .pipe(gulp.dest('../assets/js/'));
+});
+
 gulp.task('concat', ()=>{
   return browserify({
   	debug: true,
@@ -29,8 +39,9 @@ gulp.task('concat', ()=>{
 gulp.task('watch', ()=>{
   gulp.watch([
   	'js/**/**'
-  	], ['concat','reload']
+  	], ['concat','riot','reload']
   );	
 })
 
+gulp.task('dev', ['riot', 'browserSync', 'watch']);
 gulp.task('default', ['concat', 'browserSync', 'watch']);

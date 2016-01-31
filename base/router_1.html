@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Index | Riot.js ListApp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/sanitize.css">
+  <link rel="stylesheet" href="/assets/js/lib/material.min.css">
+  <link rel="stylesheet" href="/assets/js/lib/tomorrow-night.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="/assets/js/lib/material.min.js"></script>
+  <script src="/assets/js/lib/highlight.pack.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <style>
+    .mdl-cell {
+      margin: 0 auto;
+    }
+    .txt-fn {
+      margin: 20px 0 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Always shows a header, even in smaller screens. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">Riot.js Tutorial</span>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+      </nav>
+    </div>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--6-col">
+            <!-- Example -->
+            <div>
+              <h3 class="txt-fn">RESULT</h3>
+              <p>When you go to "<a href="http://localhost:3000/base/router_1.html#/fruit/apple">http://localhost:3000/base/router_1.html#/fruit/apple</a>",<br>
+              you can see the result from console.</p>
+            </div>
+            <route></route>
+
+            <!-- Source -->
+            <p class="txt-fn">route1.tag</p>
+            <pre><code class="javascript">
+            &lt;route&gt;
+              this.on('mount', function() {
+                // URL変更を検知開始
+                riot.route.start()
+
+                // URLが`/fruit/apple`に変更した場合
+                // 'apple'を`name`として渡す
+                riot.route('/fruit/*', function(name) {
+                  console.log('The detail of ' + name)
+                });
+              });
+            &lt;/route&gt;
+            </code></pre>
+
+            <p class="txt-fn">html</p>
+            <pre><code class="html">
+            &lt;route1&gt;&lt;/route1&gt;
+            &lt;script src="assets/js/script.bundle.js"&gt;&lt;/script&gt;
+            </code></pre>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="/assets/js/lib/jquery.min.js"></script>
+  <script src="/assets/js/script.bundle.js"></script>
+</body>
+</html>
